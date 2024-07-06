@@ -1,4 +1,4 @@
-"use client"
+"use client";
 
 import { useEffect, useRef } from "react";
 import { motion } from "framer-motion";
@@ -12,20 +12,6 @@ import { Button } from "@/components/ui/button";
 export default function ContactPage() {
   const formRef = useRef(null);
 
-  useEffect(() => {
-    const elements = formRef.current.querySelectorAll(
-      "input, textarea, button"
-    );
-    gsap.from(elements, {
-      duration: 0.6,
-      y: -20,
-      opacity: 0,
-      stagger: 0.2,
-      ease: "power3.out",
-      delay: 0.5,
-    });
-  }, []);
-
   return (
     <div className="flex flex-col min-h-[100vh]">
       <main className="flex-1">
@@ -35,7 +21,7 @@ export default function ContactPage() {
           transition={{ duration: 0.8 }}
           className="w-full py-12 md:py-24 lg:py-32"
         >
-          <div className="container px-4 md:px-6 grid gap-6 lg:grid-cols-[1fr_400px] lg:gap-12 xl:grid-cols-[1fr_600px]">
+          <div className="container flex justify-center px-4 md:px-6  gap-6 lg:grid-cols-[1fr_400px] lg:gap-12 xl:grid-cols-[1fr_600px]">
             <motion.div
               initial={{ opacity: 0, x: -100 }}
               animate={{ opacity: 1, x: 0 }}
@@ -54,7 +40,7 @@ export default function ContactPage() {
               <div className="grid gap-4" ref={formRef}>
                 <div>
                   <Label htmlFor="name">Name</Label>
-                  <Input id="name" type="text" placeholder="Enter your name"/>
+                  <Input id="name" type="text" placeholder="Enter your name" />
                 </div>
                 <div>
                   <Label htmlFor="email">Email</Label>
@@ -73,34 +59,6 @@ export default function ContactPage() {
                   />
                 </div>
                 <Button className="w-full">Submit</Button>
-              </div>
-            </motion.div>
-            <motion.div
-              initial={{ opacity: 0, x: 100 }}
-              animate={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.8, delay: 0.6 }}
-              className="flex flex-col justify-center space-y-4"
-            >
-              <div className="space-y-2">
-                <h2 className="text-2xl font-bold">Our Contact Info</h2>
-                <div className="">
-                  <p>Cameroon Fresh</p>
-                  <p>123 Main Street</p>
-                  <p>Yaoundé, Cameroon</p>
-                  <p>Phone: +237 123 456 789</p>
-                  <p>Email: info@cameroonfresh.com</p>
-                </div>
-              </div>
-              <div className="flex gap-4">
-                <Link href="#" className="hover:underline" prefetch={false}>
-                  <FacebookIcon className="h-6 w-6" />
-                </Link>
-                <Link href="#" className="hover:underline" prefetch={false}>
-                  <TwitterIcon className="h-6 w-6" />
-                </Link>
-                <Link href="#" className="hover:underline" prefetch={false}>
-                  <InstagramIcon className="h-6 w-6" />
-                </Link>
               </div>
             </motion.div>
           </div>
