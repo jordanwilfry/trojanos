@@ -61,7 +61,7 @@ export const FlexibleBreadcrumb = ({ items, className }) => {
                       <span
                         aria-hidden="true"
                         className="ml-1 text-xs text-gray-400">
-                        (current)
+                        {item.label}
                       </span>
                     )}
                   </a>
