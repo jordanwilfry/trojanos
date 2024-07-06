@@ -18,28 +18,28 @@ export function Footer() {
     {
       title: "About Us",
       links: [
-        { name: "Our Mission", href: "/mission" },
-        { name: "Team", href: "/team" },
-        { name: "Partners", href: "/partners" },
-        { name: "Sustainability", href: "/sustainability" },
+        { name: "Our Mission", href: "/#" },
+        { name: "Team", href: "/#" },
+        { name: "Partners", href: "/#" },
+        { name: "Sustainability", href: "/#" },
       ],
     },
     {
       title: "Farmers",
       links: [
-        { name: "Join the Network", href: "/join" },
-        { name: "Resources", href: "/resources" },
-        { name: "Training Programs", href: "/training" },
-        { name: "Success Stories", href: "/success-stories" },
+        { name: "Join the Network", href: "/#" },
+        { name: "Resources", href: "/#" },
+        { name: "Training Programs", href: "/#" },
+        { name: "Success Stories", href: "/#" },
       ],
     },
     {
       title: "Buyers",
       links: [
-        { name: "Shop Fresh Produce", href: "/shop" },
-        { name: "Bulk Orders", href: "/bulk-orders" },
-        { name: "Delivery Information", href: "/delivery" },
-        { name: "Quality Guarantee", href: "/quality" },
+        { name: "Shop Fresh Produce", href: "/#" },
+        { name: "Bulk Orders", href: "/#" },
+        { name: "Delivery Information", href: "/#" },
+        { name: "Quality Guarantee", href: "/#" },
       ],
     },
   ];
