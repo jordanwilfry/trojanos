@@ -20,7 +20,7 @@ export function ShopHero() {
         }}
       />
 
-      <div className="container mx-auto px-4 py-16 sm:py-24 relative z-10">
+      <div className="  py-16 sm:py-24 relative z-10">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -29,35 +29,12 @@ export function ShopHero() {
             <Sparkles className="mr-1 h-3 w-3" /> New Collection
           </Badge>
           <h1 className="text-4xl sm:text-6xl font-extrabold mb-4">
-            Discover Your Style
+            Save the planet
           </h1>
           <p className="text-xl sm:text-2xl mb-8 max-w-2xl">
-            Explore our curated selection of trendsetting fashion and
-            accessories.
+            Discover a wide range of curated products for you
           </p>
         </motion.div>
-
-        <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 mb-12">
-          {["Summer Vibes", "Urban Chic", "Vintage Charm"].map(
-            (category, index) => (
-              <motion.div
-                key={category}
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6, delay: index * 0.1 }}>
-                <Card>
-                  <CardContent className="p-6">
-                    <h3 className="text-xl font-bold mb-2">{category}</h3>
-                    <p className="text-sm opacity-80">
-                      Discover the latest trends in {category.toLowerCase()}{" "}
-                      fashion.
-                    </p>
-                  </CardContent>
-                </Card>
-              </motion.div>
-            )
-          )}
-        </div>
 
         <motion.div
           initial={{ opacity: 0, y: 20 }}
