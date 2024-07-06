@@ -3,7 +3,7 @@
 import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { FileText, Folder, Star, ShoppingCart } from "lucide-react";
-import Filter from "./Filter";
+import Filter from "./filter";
 import { ShopHero } from "./hero";
 import { FlexibleBreadcrumb } from "@/components/reusables/bread-crumbs";
 import { Products } from "@/components/datas/products";
