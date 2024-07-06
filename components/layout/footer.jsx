@@ -49,26 +49,26 @@ export function Footer() {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 0.5 }}
-      className=""
+      className="bg-background text-muted-foreground"
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           <div className="space-y-4">
             <Link href="/" className="flex items-center" prefetch={false}>
-              <LeafIcon className="h-8 w-8" />
-              <span className="ml-2 text-xl font-bold">Cameroon Fresh</span>
+              <LeafIcon className="h-8 w-8 text-primary" />
+              <span className="ml-2 text-xl font-bold text-primary">Cameroon Fresh</span>
             </Link>
-            <p className="text-sm ">
+            <p className="text-sm">
               Empowering farmers, reducing waste, and bringing fresh produce to communities across Cameroon.
             </p>
             <div className="flex space-x-4">
-              <a href="#" className=" hover transition-colors">
+              <a href="#" className="hover:text-primary transition-colors">
                 <FacebookIcon className="h-6 w-6" />
               </a>
-              <a href="#" className=" hover transition-colors">
+              <a href="#" className="hover:text-primary transition-colors">
                 <TwitterIcon className="h-6 w-6" />
               </a>
-              <a href="#" className=" hover transition-colors">
+              <a href="#" className="hover:text-primary transition-colors">
                 <InstagramIcon className="h-6 w-6" />
               </a>
             </div>
@@ -80,7 +80,7 @@ export function Footer() {
               <ul className="space-y-2">
                 {section.links.map((link) => (
                   <li key={link.name}>
-                    <Link href={link.href} className=" hover transition-colors" prefetch={false}>
+                    <Link href={link.href} className="hover:text-primary transition-colors" prefetch={false}>
                       {link.name}
                     </Link>
                   </li>
@@ -97,12 +97,12 @@ export function Footer() {
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
                 placeholder="Your email"
-                className="w-full px-3 py-2 rounded-md focus:outline-none focus:ring-2"
+                className="w-full px-3 py-2 rounded-md border border-primary focus:outline-none focus:ring-2 focus:ring-primary"
                 required
               />
               <button
                 type="submit"
-                className="w-full px-3 py-2  rounded-md transition-colors focus:outline-none focus:ring-2 focus:ring-offset-2"
+                className="w-full px-3 py-2 rounded-md bg-primary text-background transition-colors focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary"
               >
                 Subscribe to Newsletter
               </button>
@@ -110,11 +110,11 @@ export function Footer() {
           </div>
         </div>
 
-        <div className="mt-12 pt-8 border-t flex flex-col sm:flex-row justify-between items-center">
-          <p className="text-sm ">&copy; 2024 Cameroon Fresh. All rights reserved.</p>
+        <div className="mt-12 pt-8 border-t border-muted-foreground flex flex-col sm:flex-row justify-between items-center">
+          <p className="text-sm">&copy; 2024 Cameroon Fresh. All rights reserved.</p>
           <div className="mt-4 sm:mt-0">
-            <Link href="/privacy" className="text-sm  hover mr-4" prefetch={false}>Privacy Policy</Link>
-            <Link href="/terms" className="text-sm  hover" prefetch={false}>Terms of Service</Link>
+            <Link href="/privacy" className="text-sm hover:text-primary transition-colors mr-4" prefetch={false}>Privacy Policy</Link>
+            <Link href="/terms" className="text-sm hover:text-primary transition-colors" prefetch={false}>Terms of Service</Link>
           </div>
         </div>
       </div>

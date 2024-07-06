@@ -7,8 +7,8 @@ import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet"
 
 export function Navbar() {
   const navItems = [
-    { name: 'About', href: '/about' },
-    { name: 'Impact', href: '/impact' },
+    // { name: 'About', href: '/about' },
+    // { name: 'Impact', href: '/impact' },
     { name: 'Solutions', href: '/solutions' },
     { name: 'Shop', href: '/shop' },
     { name: 'Contact', href: '/contact' },
