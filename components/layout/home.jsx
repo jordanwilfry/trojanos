@@ -67,7 +67,7 @@ export default function Component() {
               <div className="space-y-2">
                 <motion.h1
                   variants={itemVariants}
-                  className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold tracking-tighter ">
+                  className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold tracking-tighter text-primary">
                   Empowering Farmers, Reducing Waste
                 </motion.h1>
                 <motion.p
@@ -96,7 +96,7 @@ export default function Component() {
                   variants={buttonVariants}
                   whileHover="hover"
                   whileTap="tap"
-                  className="inline-flex h-10 items-center justify-center rounded-md border px-8 text-sm font-medium shadow-sm transition-colors  focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-[#4CAF50] disabled:pointer-events-none disabled:opacity-50">
+                  className="inline-flex h-10 items-center justify-center rounded-md border px-8 text-sm font-medium shadow-sm transition-colors  focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-[#4CAF50] bg-primary text-primary-foreground disabled:pointer-events-none disabled:opacity-50">
                   Get Involved
                 </motion.a>
               </motion.div>
@@ -116,7 +116,7 @@ export default function Component() {
           <div className="container px-4 md:px-6">
             <div className="flex flex-col items-center justify-center space-y-4 text-center">
               <div className="space-y-2">
-                <div className="inline-block rounded-lg  px-3 py-1 text-sm ">
+                <div className="inline-block rounded-lg px-3 py-1 text-sm bg-primary text-primary-foreground">
                   Impact on Farmers
                 </div>
                 <h2 className="section-title text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold tracking-tighter ">
@@ -154,7 +154,9 @@ export default function Component() {
                   className="grid gap-6">
                   <motion.li variants={itemVariants}>
                     <div className="grid gap-1">
-                      <h3 className="text-xl font-bold ">Reduced Incomes</h3>
+                      <h3 className="text-xl font-bold text-primary">
+                        Reduced Incomes
+                      </h3>
                       <p className="">
                         Farmers lose a significant portion of their harvest due
                         to spoilage, leading to decreased earnings and financial
@@ -164,7 +166,9 @@ export default function Component() {
                   </motion.li>
                   <motion.li variants={itemVariants}>
                     <div className="grid gap-1">
-                      <h3 className="text-xl font-bold ">Wasted Efforts</h3>
+                      <h3 className="text-xl font-bold text-primary">
+                        Wasted Efforts
+                      </h3>
                       <p className="">
                         The time, resources, and hard work invested by farmers
                         are often rendered meaningless when their produce cannot
@@ -174,7 +178,9 @@ export default function Component() {
                   </motion.li>
                   <motion.li variants={itemVariants}>
                     <div className="grid gap-1">
-                      <h3 className="text-xl font-bold ">Diminished Hope</h3>
+                      <h3 className="text-xl font-bold text-primary">
+                        Diminished Hope
+                      </h3>
                       <p className="">
                         Repeated losses due to spoilage can erode the confidence
                         and motivation of farmers, making it increasingly
@@ -191,7 +197,7 @@ export default function Component() {
           <div className="container px-4 md:px-6">
             <div className="flex flex-col items-center justify-center space-y-4 text-center">
               <div className="space-y-2">
-                <div className="inline-block rounded-lg  px-3 py-1 text-sm ">
+                <div className="inline-block rounded-lg  px-3 py-1 text-sm bg-primary text-primary-foreground">
                   Food Waste
                 </div>
                 <h2 className="section-title text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold tracking-tighter ">
@@ -228,7 +234,7 @@ export default function Component() {
                   className="grid gap-6">
                   <motion.li variants={itemVariants}>
                     <div className="grid gap-1">
-                      <h3 className="text-xl font-bold ">
+                      <h3 className="text-xl font-bold text-primary">
                         Tons of Produce Lost
                       </h3>
                       <p className="">
@@ -240,7 +246,7 @@ export default function Component() {
                   </motion.li>
                   <motion.li variants={itemVariants}>
                     <div className="grid gap-1">
-                      <h3 className="text-xl font-bold ">
+                      <h3 className="text-xl font-bold text-primary">
                         Nutritional Deficiencies
                       </h3>
                       <p className="">
@@ -252,7 +258,7 @@ export default function Component() {
                   </motion.li>
                   <motion.li variants={itemVariants}>
                     <div className="grid gap-1">
-                      <h3 className="text-xl font-bold ">
+                      <h3 className="text-xl font-bold text-primary">
                         Environmental Impact
                       </h3>
                       <p className="">
@@ -272,7 +278,7 @@ export default function Component() {
           <div className="container px-4 md:px-6">
             <div className="flex flex-col items-center justify-center space-y-4 text-center">
               <div className="space-y-2">
-                <div className="inline-block rounded-lg  px-3 py-1 text-sm ">
+                <div className="inline-block rounded-lg  px-3 py-1 text-sm bg-primary text-primary-foreground">
                   Community Impact
                 </div>
                 <h2 className="section-title text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold tracking-tighter ">
@@ -309,7 +315,7 @@ export default function Component() {
                   className="grid gap-6">
                   <motion.li variants={itemVariants}>
                     <div className="grid gap-1">
-                      <h3 className="text-xl font-bold ">
+                      <h3 className="text-xl font-bold text-primary">
                         Limited Access to Nutrition
                       </h3>
                       <p className="">
@@ -322,7 +328,9 @@ export default function Component() {
                   </motion.li>
                   <motion.li variants={itemVariants}>
                     <div className="grid gap-1">
-                      <h3 className="text-xl font-bold ">Economic Hardship</h3>
+                      <h3 className="text-xl font-bold text-primary">
+                        Economic Hardship
+                      </h3>
                       <p className="">
                         The lack of fresh, affordable produce in local markets
                         forces communities to rely on more expensive and
@@ -333,7 +341,7 @@ export default function Component() {
                   </motion.li>
                   <motion.li variants={itemVariants}>
                     <div className="grid gap-1">
-                      <h3 className="text-xl font-bold ">
+                      <h3 className="text-xl font-bold text-primary">
                         Diminished Quality of Life
                       </h3>
                       <p className="">
@@ -378,7 +386,7 @@ export default function Component() {
                 variants={buttonVariants}
                 whileHover="hover"
                 whileTap="tap"
-                className="inline-flex h-10 items-center justify-center rounded-md border px-8 text-sm font-medium shadow-sm transition-colors  focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-[#4CAF50] disabled:pointer-events-none disabled:opacity-50">
+                className="inline-flex h-10 items-center justify-center rounded-md border px-8 text-sm font-medium shadow-sm transition-colors  focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-[#4CAF50] bg-primary text-primary-foreground disabled:pointer-events-none disabled:opacity-50">
                 Learn More
               </motion.a>
             </motion.div>

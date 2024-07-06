@@ -20,7 +20,7 @@ export default function ContactPage() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
           className="w-full py-12 md:py-24 lg:py-32">
-          <div className="container px-4 md:px-6 grid gap-6 lg:grid-cols-[1fr_400px] lg:gap-12 xl:grid-cols-[1fr_600px]">
+          <div className="container flex justify-center px-4 md:px-6  gap-6 lg:grid-cols-[1fr_400px] lg:gap-12 xl:grid-cols-[1fr_600px]">
             <motion.div
               initial={{ opacity: 0, x: -100 }}
               animate={{ opacity: 1, x: 0 }}
@@ -57,33 +57,6 @@ export default function ContactPage() {
                   />
                 </div>
                 <Button className="w-full">Submit</Button>
-              </div>
-            </motion.div>
-            <motion.div
-              initial={{ opacity: 0, x: 100 }}
-              animate={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.8, delay: 0.6 }}
-              className="flex flex-col justify-center space-y-4">
-              <div className="space-y-2">
-                <h2 className="text-2xl font-bold">Our Contact Info</h2>
-                <div className="">
-                  <p>Cameroon Fresh</p>
-                  <p>123 Main Street</p>
-                  <p>Yaoundé, Cameroon</p>
-                  <p>Phone: +237 123 456 789</p>
-                  <p>Email: info@cameroonfresh.com</p>
-                </div>
-              </div>
-              <div className="flex gap-4">
-                <Link href="#" className="hover:underline" prefetch={false}>
-                  <FacebookIcon className="h-6 w-6" />
-                </Link>
-                <Link href="#" className="hover:underline" prefetch={false}>
-                  <TwitterIcon className="h-6 w-6" />
-                </Link>
-                <Link href="#" className="hover:underline" prefetch={false}>
-                  <InstagramIcon className="h-6 w-6" />
-                </Link>
               </div>
             </motion.div>
           </div>
