@@ -56,42 +56,7 @@ export default function Component() {
 
   return (
     <div className="flex flex-col min-h-[100dvh]">
-      <header className="px-4 lg:px-6 h-14 flex items-center bg-[#F5F5F5]">
-        <Link href="#" className="flex items-center justify-center" prefetch={false}>
-          <LeafIcon className="h-6 w-6 text-[#4CAF50]" />
-          <span className="sr-only">Cameroon Fresh</span>
-        </Link>
-        <nav className="ml-auto flex gap-4 sm:gap-6">
-          <Link
-            href="#"
-            className="text-sm font-medium hover:underline underline-offset-4 text-[#4CAF50]"
-            prefetch={false}
-          >
-            About
-          </Link>
-          <Link
-            href="#"
-            className="text-sm font-medium hover:underline underline-offset-4 text-[#4CAF50]"
-            prefetch={false}
-          >
-            Impact
-          </Link>
-          <Link
-            href="#"
-            className="text-sm font-medium hover:underline underline-offset-4 text-[#4CAF50]"
-            prefetch={false}
-          >
-            Solutions
-          </Link>
-          <Link
-            href="#"
-            className="text-sm font-medium hover:underline underline-offset-4 text-[#4CAF50]"
-            prefetch={false}
-          >
-            Contact
-          </Link>
-        </nav>
-      </header>
+     
       <main className="flex-1">
         <section className="w-full py-12 md:py-24 lg:py-32 bg-[#F5F5F5]">
           <div className="container px-4 md:px-6 grid gap-6 md:grid-cols-1 lg:grid-cols-[1fr_400px] lg:gap-12 xl:grid-cols-[1fr_600px]">
@@ -397,22 +362,3 @@ export default function Component() {
   )
 }
 
-function LeafIcon(props) {
-  return (
-    <svg
-      {...props}
-      xmlns="http://www.w3.org/2000/svg"
-      width="24"
-      height="24"
-      viewBox="0 0 24 24"
-      fill="none"
-      stroke="currentColor"
-      strokeWidth="2"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-    >
-      <path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z" />
-      <path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12" />
-    </svg>
-  )
-}
