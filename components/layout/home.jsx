@@ -67,7 +67,7 @@ export default function Component() {
               className="flex flex-col justify-center space-y-4"
             >
               <div className="space-y-2">
-                <motion.h1 variants={itemVariants} className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold tracking-tighter ">
+                <motion.h1 variants={itemVariants} className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold tracking-tighter text-primary">
                   Empowering Farmers, Reducing Waste
                 </motion.h1>
                 <motion.p variants={itemVariants} className="max-w-[600px]  text-sm sm:text-base md:text-lg lg:text-xl">
@@ -91,7 +91,7 @@ export default function Component() {
                   variants={buttonVariants}
                   whileHover="hover"
                   whileTap="tap"
-                  className="inline-flex h-10 items-center justify-center rounded-md border px-8 text-sm font-medium shadow-sm transition-colors  focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-[#4CAF50] disabled:pointer-events-none disabled:opacity-50"
+                  className="inline-flex h-10 items-center justify-center rounded-md border px-8 text-sm font-medium shadow-sm transition-colors  focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-[#4CAF50] bg-primary text-primary-foreground disabled:pointer-events-none disabled:opacity-50"
                 >
                   Get Involved
                 </motion.a>
@@ -112,7 +112,7 @@ export default function Component() {
           <div className="container px-4 md:px-6">
             <div className="flex flex-col items-center justify-center space-y-4 text-center">
               <div className="space-y-2">
-                <div className="inline-block rounded-lg  px-3 py-1 text-sm ">
+                <div className="inline-block rounded-lg px-3 py-1 text-sm bg-primary text-primary-foreground">
                   Impact on Farmers
                 </div>
                 <h2 className="section-title text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold tracking-tighter ">
@@ -149,7 +149,7 @@ export default function Component() {
                 >
                   <motion.li variants={itemVariants}>
                     <div className="grid gap-1">
-                      <h3 className="text-xl font-bold ">Reduced Incomes</h3>
+                      <h3 className="text-xl font-bold text-primary">Reduced Incomes</h3>
                       <p className="">
                         Farmers lose a significant portion of their harvest due to spoilage, leading to decreased
                         earnings and financial instability.
@@ -158,7 +158,7 @@ export default function Component() {
                   </motion.li>
                   <motion.li variants={itemVariants}>
                     <div className="grid gap-1">
-                      <h3 className="text-xl font-bold ">Wasted Efforts</h3>
+                      <h3 className="text-xl font-bold text-primary">Wasted Efforts</h3>
                       <p className="">
                         The time, resources, and hard work invested by farmers are often rendered meaningless when their
                         produce cannot reach the market.
@@ -167,7 +167,7 @@ export default function Component() {
                   </motion.li>
                   <motion.li variants={itemVariants}>
                     <div className="grid gap-1">
-                      <h3 className="text-xl font-bold ">Diminished Hope</h3>
+                      <h3 className="text-xl font-bold text-primary">Diminished Hope</h3>
                       <p className="">
                         Repeated losses due to spoilage can erode the confidence and motivation of farmers, making it
                         increasingly difficult to maintain their livelihoods.
@@ -183,7 +183,7 @@ export default function Component() {
           <div className="container px-4 md:px-6">
             <div className="flex flex-col items-center justify-center space-y-4 text-center">
               <div className="space-y-2">
-                <div className="inline-block rounded-lg  px-3 py-1 text-sm ">Food Waste</div>
+                <div className="inline-block rounded-lg  px-3 py-1 text-sm bg-primary text-primary-foreground">Food Waste</div>
                 <h2 className="section-title text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold tracking-tighter ">
                   Staggering Levels of Food Waste
                 </h2>
@@ -218,7 +218,7 @@ export default function Component() {
                 >
                   <motion.li variants={itemVariants}>
                     <div className="grid gap-1">
-                      <h3 className="text-xl font-bold ">Tons of Produce Lost</h3>
+                      <h3 className="text-xl font-bold text-primary">Tons of Produce Lost</h3>
                       <p className="">
                         Estimates suggest that up to 40% of the total agricultural output in rural Cameroon is lost due
                         to spoilage and lack of distribution channels.
@@ -227,7 +227,7 @@ export default function Component() {
                   </motion.li>
                   <motion.li variants={itemVariants}>
                     <div className="grid gap-1">
-                      <h3 className="text-xl font-bold ">Nutritional Deficiencies</h3>
+                      <h3 className="text-xl font-bold text-primary">Nutritional Deficiencies</h3>
                       <p className="">
                         The loss of fresh produce deprives communities of access to essential vitamins, minerals, and
                         other nutrients, contributing to widespread malnutrition.
@@ -236,7 +236,7 @@ export default function Component() {
                   </motion.li>
                   <motion.li variants={itemVariants}>
                     <div className="grid gap-1">
-                      <h3 className="text-xl font-bold ">Environmental Impact</h3>
+                      <h3 className="text-xl font-bold text-primary">Environmental Impact</h3>
                       <p className="">
                         The vast amounts of food waste generated have a significant environmental impact, contributing
                         to greenhouse gas emissions and the depletion of natural resources.
@@ -252,7 +252,7 @@ export default function Component() {
           <div className="container px-4 md:px-6">
             <div className="flex flex-col items-center justify-center space-y-4 text-center">
               <div className="space-y-2">
-                <div className="inline-block rounded-lg  px-3 py-1 text-sm ">
+                <div className="inline-block rounded-lg  px-3 py-1 text-sm bg-primary text-primary-foreground">
                   Community Impact
                 </div>
                 <h2 className="section-title text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold tracking-tighter ">
@@ -289,7 +289,7 @@ export default function Component() {
                 >
                   <motion.li variants={itemVariants}>
                     <div className="grid gap-1">
-                      <h3 className="text-xl font-bold ">Limited Access to Nutrition</h3>
+                      <h3 className="text-xl font-bold text-primary">Limited Access to Nutrition</h3>
                       <p className="">
                         Without reliable access to fresh produce, rural communities in Cameroon face challenges in
                         obtaining essential nutrients, leading to health issues and malnutrition.
@@ -298,7 +298,7 @@ export default function Component() {
                   </motion.li>
                   <motion.li variants={itemVariants}>
                     <div className="grid gap-1">
-                      <h3 className="text-xl font-bold ">Economic Hardship</h3>
+                      <h3 className="text-xl font-bold text-primary">Economic Hardship</h3>
                       <p className="">
                         The lack of fresh, affordable produce in local markets forces communities to rely on more
                         expensive and less-nutritious alternatives, further exacerbating economic challenges.
@@ -307,7 +307,7 @@ export default function Component() {
                   </motion.li>
                   <motion.li variants={itemVariants}>
                     <div className="grid gap-1">
-                      <h3 className="text-xl font-bold ">Diminished Quality of Life</h3>
+                      <h3 className="text-xl font-bold text-primary">Diminished Quality of Life</h3>
                       <p className="">
                         The inability to access fresh, locally-grown produce undermines the overall well-being and
                         quality of life for rural communities in Cameroon.
@@ -350,7 +350,7 @@ export default function Component() {
                 variants={buttonVariants}
                 whileHover="hover"
                 whileTap="tap"
-                className="inline-flex h-10 items-center justify-center rounded-md border px-8 text-sm font-medium shadow-sm transition-colors  focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-[#4CAF50] disabled:pointer-events-none disabled:opacity-50"
+                className="inline-flex h-10 items-center justify-center rounded-md border px-8 text-sm font-medium shadow-sm transition-colors  focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-[#4CAF50] bg-primary text-primary-foreground disabled:pointer-events-none disabled:opacity-50"
               >
                 Learn More
               </motion.a>
