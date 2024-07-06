@@ -16,17 +16,17 @@ export function Navbar() {
   ];
 
   return (
-    <header className="px-4 lg:px-6 h-14 flex items-center bg-[#F5F5F5] relative z-10">
+    <header className="px-4 lg:px-6 h-14 flex items-center ] relative z-10">
       <Link href="/" className="flex items-center justify-center" prefetch={false}>
-        <LeafIcon className="h-6 w-6 text-[#4CAF50]" />
-        <span className="ml-2 text-lg font-semibold text-[#4CAF50]">Cameroon Fresh</span>
+        <LeafIcon className="h-6 w-6 " />
+        <span className="ml-2 text-lg font-semibold ">Cameroon Fresh</span>
       </Link>
       <nav className="ml-auto hidden md:flex gap-4 sm:gap-6">
         {navItems.map((item) => (
           <Link
             key={item.name}
             href={item.href}
-            className="text-sm font-medium hover:underline underline-offset-4 text-[#4CAF50]"
+            className="text-sm font-medium hover:underline underline-offset-4 "
             prefetch={false}
           >
             {item.name}
@@ -39,9 +39,9 @@ export function Navbar() {
         aria-label="Toggle menu"
       >
         {isMenuOpen ? (
-          <XIcon className="h-6 w-6 text-[#4CAF50]" />
+          <XIcon className="h-6 w-6 " />
         ) : (
-          <MenuIcon className="h-6 w-6 text-[#4CAF50]" />
+          <MenuIcon className="h-6 w-6 " />
         )}
       </button>
       {isMenuOpen && (
@@ -49,13 +49,13 @@ export function Navbar() {
           initial={{ opacity: 0, y: -10 }}
           animate={{ opacity: 1, y: 0 }}
           exit={{ opacity: 0, y: -10 }}
-          className="absolute top-full left-0 right-0 bg-[#F5F5F5] shadow-md p-4 md:hidden"
+          className="absolute top-full left-0 right-0 ] shadow-md p-4 md:hidden"
         >
           {navItems.map((item) => (
             <Link
               key={item.name}
               href={item.href}
-              className="block py-2 text-sm font-medium text-[#4CAF50] hover:bg-[#E0E0E0] rounded"
+              className="block py-2 text-sm font-medium  rounded"
               onClick={() => setIsMenuOpen(false)}
               prefetch={false}
             >

@@ -49,26 +49,26 @@ export function Footer() {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 0.5 }}
-      className="bg-[#2E7D32] text-white"
+      className=""
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           <div className="space-y-4">
             <Link href="/" className="flex items-center" prefetch={false}>
-              <LeafIcon className="h-8 w-8 text-white" />
+              <LeafIcon className="h-8 w-8" />
               <span className="ml-2 text-xl font-bold">Cameroon Fresh</span>
             </Link>
-            <p className="text-sm text-green-100">
+            <p className="text-sm ">
               Empowering farmers, reducing waste, and bringing fresh produce to communities across Cameroon.
             </p>
             <div className="flex space-x-4">
-              <a href="#" className="text-green-100 hover:text-white transition-colors">
+              <a href="#" className=" hover transition-colors">
                 <FacebookIcon className="h-6 w-6" />
               </a>
-              <a href="#" className="text-green-100 hover:text-white transition-colors">
+              <a href="#" className=" hover transition-colors">
                 <TwitterIcon className="h-6 w-6" />
               </a>
-              <a href="#" className="text-green-100 hover:text-white transition-colors">
+              <a href="#" className=" hover transition-colors">
                 <InstagramIcon className="h-6 w-6" />
               </a>
             </div>
@@ -80,7 +80,7 @@ export function Footer() {
               <ul className="space-y-2">
                 {section.links.map((link) => (
                   <li key={link.name}>
-                    <Link href={link.href} className="text-green-100 hover:text-white transition-colors" prefetch={false}>
+                    <Link href={link.href} className=" hover transition-colors" prefetch={false}>
                       {link.name}
                     </Link>
                   </li>
@@ -97,12 +97,12 @@ export function Footer() {
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
                 placeholder="Your email"
-                className="w-full px-3 py-2 text-green-900 bg-white rounded-md focus:outline-none focus:ring-2 focus:ring-green-500"
+                className="w-full px-3 py-2 rounded-md focus:outline-none focus:ring-2"
                 required
               />
               <button
                 type="submit"
-                className="w-full px-3 py-2 bg-green-500 text-white rounded-md hover:bg-green-600 transition-colors focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-offset-2 focus:ring-offset-green-700"
+                className="w-full px-3 py-2  rounded-md transition-colors focus:outline-none focus:ring-2 focus:ring-offset-2"
               >
                 Subscribe to Newsletter
               </button>
@@ -110,11 +110,11 @@ export function Footer() {
           </div>
         </div>
 
-        <div className="mt-12 pt-8 border-t border-green-700 flex flex-col sm:flex-row justify-between items-center">
-          <p className="text-sm text-green-100">&copy; 2024 Cameroon Fresh. All rights reserved.</p>
+        <div className="mt-12 pt-8 border-t flex flex-col sm:flex-row justify-between items-center">
+          <p className="text-sm ">&copy; 2024 Cameroon Fresh. All rights reserved.</p>
           <div className="mt-4 sm:mt-0">
-            <Link href="/privacy" className="text-sm text-green-100 hover:text-white mr-4" prefetch={false}>Privacy Policy</Link>
-            <Link href="/terms" className="text-sm text-green-100 hover:text-white" prefetch={false}>Terms of Service</Link>
+            <Link href="/privacy" className="text-sm  hover mr-4" prefetch={false}>Privacy Policy</Link>
+            <Link href="/terms" className="text-sm  hover" prefetch={false}>Terms of Service</Link>
           </div>
         </div>
       </div>
